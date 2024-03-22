@@ -30,13 +30,6 @@ const Listing = () => {
             <img src={img} alt="" />
             <h3>Annual Vince</h3>
         </div>
-      
-      
-        <div className="singleItem">
-            <AiFillHeart className='icon' />
-            <img src={img} alt="" />
-            <h3>Annual Vince</h3>
-        </div>
 
         <div className="singleItem">
             <AiFillHeart className='icon' />
@@ -55,13 +48,39 @@ const Listing = () => {
             <img src={img3} alt="" />
             <h3>Spider Plant</h3>
         </div>
-      
+      </div>
     
     
       <div className="sellers flex">
-        <div className="topSellers"></div>
-          <div className="listing_heading flex">
+        <div className="topSellers">
+          <div className="heading flex">
             <h1>Top Sellers</h1>
+            <button className="btn flex">
+            See All <BsArrowRightShort className='icon'/>
+            </button>
+          </div>
+
+          <div className="card flex">
+            <div className="users">
+              <img src={user2} alt="User Logo" />
+              <img src={user1} alt="User Logo" />
+              <img src={user4} alt="User Logo" />
+              <img src={user3} alt="User Logo" />
+            </div>
+            <div className="cardText">
+              <span>
+                14.566 Plants sold <br/>
+              
+              <small>
+                21 Sellers <span className="date">7 Days</span>
+              </small>
+              </span>
+            </div>
+          </div>
+      </div>
+        <div className="featuredSellers">
+          <div className="heading flex">
+            <h1>Featured Sellers</h1>
             <button className="btn flex">
             See All <BsArrowRightShort className='icon'/>
             </button>
@@ -87,7 +106,8 @@ const Listing = () => {
       </div>
     </div>
     </div>
-  )
+    
+  ) 
 }
 
 export default Listing
